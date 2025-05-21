@@ -1,11 +1,10 @@
 # app.py
-from flask import Flask, request, jsonify, render_template # Add render_template
+from flask import Flask, request, jsonify, render_template 
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 import cv2
 
-# ... (your existing model loading and constants) ...
 MODEL_PATH = 'A:/AI model/fashion_classifier'
 IMAGE_HEIGHT, IMAGE_WIDTH = 80, 60
 CLASS_NAMES = ['pants', 'long sleeve', 'dress', 'bags', 'footwear']
@@ -25,7 +24,6 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    # ... (your existing predict function, make sure it returns confidence too if your HTML uses it)
     if 'file' not in request.files:
         return jsonify({'error': 'No file provided'}), 400
 
@@ -62,16 +60,14 @@ def predict():
         if len(probabilities) != len(CLASS_NAMES):
             # Log this error on the server, it's a mismatch between model output and CLASS_NAMES
             app.logger.error(f"Mismatch between number of probabilities ({len(probabilities)}) and CLASS_NAMES ({len(CLASS_NAMES)})")
-            # You might want to return an error here, or proceed without all_confidences
-            # For now, let's ensure it doesn't crash the client if it's missing
             all_confidences_dict = {} # Send empty if there's a mismatch
 
 
         return jsonify({
             'prediction': predicted_label,
             'confidence': round(confidence, 4),
-            'class_index': predicted_class_index, # You might not use this on client, but good to have
-            'all_confidences': all_confidences_dict # <-- ADD THIS
+            'class_index': predicted_class_index, 
+            'all_confidences': all_confidences_dict
         })
 
     except Exception as e:
