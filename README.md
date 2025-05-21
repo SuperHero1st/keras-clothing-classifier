@@ -13,6 +13,16 @@ A Flask web application that allows users to upload an image of a clothing item.
 - [Running the Application](#running-the-application)
 - [How It Works](#how-it-works)
 
+## 📊 Datasets
+
+This project uses the following datasets from Kaggle:
+
+1. [Fashion MNIST – Zalando Research](https://www.kaggle.com/datasets/zalando-research/fashionmnist)  
+   A dataset of 60,000 training and 10,000 testing grayscale images of 10 fashion categories. Often used as a drop-in replacement for the original MNIST dataset for benchmarking machine learning models.
+
+2. [Fashion Product Images (Small) – Param Aggarwal](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small)  
+   Contains ~44,000 images of fashion products across multiple categories, including metadata such as gender, master category, and product type. Useful for classification and visual search tasks.
+   
 ## Features
 - **Image Upload:** User-friendly interface to upload clothing images.
 - **AI-Powered Classification:** Utilizes a Keras/TensorFlow model to predict the clothing category.
