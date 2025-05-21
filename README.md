@@ -9,7 +9,6 @@ A Flask web application that allows users to upload an image of a clothing item.
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Model Information](#model-information)
-- [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [Running the Application](#running-the-application)
 - [How It Works](#how-it-works)
@@ -40,24 +39,6 @@ A Flask web application that allows users to upload an image of a clothing item.
     - `bags`
     - `footwear`
 - **Model File:** The pre-trained model is stored in the repository (e.g., `models/fashion_classifier/`) and managed using Git LFS.
-
-## Project Structure
-keras-clothing-classifier/
-├── .gitattributes # For Git LFS
-├── app.py # Flask application logic
-├── models/ # Contains the Keras model (handled by Git LFS)
-│ └── fashion_classifier/ # TensorFlow SavedModel format directory
-│ ├── saved_model.pb
-│ └── variables/
-│ ├── variables.data-00000-of-00001
-│ └── variables.index
-├── static/ # (Optional) For CSS, JavaScript, static images
-│ └── style.css
-├── templates/ # Contains HTML templates
-│ └── index.html
-├── requirements.txt # Python dependencies
-└── README.md # This file
-
 
 ## Setup and Installation
 
