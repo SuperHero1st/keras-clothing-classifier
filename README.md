@@ -12,7 +12,6 @@ A Flask web application that allows users to upload an image of a clothing item.
 - [Setup and Installation](#setup-and-installation)
 - [Running the Application](#running-the-application)
 - [How It Works](#how-it-works)
-- [Contributing](#contributing)
 
 ## Features
 - **Image Upload:** User-friendly interface to upload clothing images.
@@ -110,12 +109,3 @@ You should see the web interface where you can upload an image for classificatio
 - Implement batch image processing.
 - Deploy to a cloud platform (e.g., Heroku, AWS, Google Cloud).
 -->
-
-## Contributing
-Contributions are welcome! If you have suggestions for improvements or find any bugs, please feel free to open an issue or submit a pull request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
