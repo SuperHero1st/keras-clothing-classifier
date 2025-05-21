@@ -58,7 +58,6 @@ keras-clothing-classifier/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
-*(Note: The `MODEL_PATH = 'A:/AI model/fashion_classifier'` in your `app.py` suggests the model is loaded from an absolute path. For a shareable repository, it's best to use a relative path like `models/fashion_classifier` and ensure the model files are placed there within the repo structure and tracked by Git LFS.)*
 
 ## Setup and Installation
 
